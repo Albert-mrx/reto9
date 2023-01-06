@@ -1,0 +1,23 @@
+<p>reto:</p>
+<form class="m-5">
+    <span>
+        <input type="checkbox" name="checkbox" id="" [(ngModel)]="check">
+        esta activo
+    </span>
+    <article *ngIf="check; else falso" class="w-25 bg-primary">
+        <img src="assets/angular-servidor-subir.png" alt="" class="w-100">
+        <p>
+          Angular es un framework para aplicaciones web desarrollado en TypeScript, de código abierto, mantenido por Google, que se utiliza para crear y mantener aplicaciones web de una sola página. Wikipedia
+Plataforma: Web platform
+Fecha del lanzamiento inicial: 14 de setiembre de 2016
+Desarrollador: Google Inc. y la comunidad
+Programado en: TypeScript
+Autor: Miško Hevery
+Lanzamiento inicial: 15 de septiembre de 2016 (6 años, 3 meses y 20 días)​
+Lenguajes de programación: TypeScript, AngularJS
+        </p>
+    </article>
+    <ng-template #falso>
+        <p>presiona el checkbox para mostrar el contenido 🎯</p>
+    </ng-template>
+</form>
